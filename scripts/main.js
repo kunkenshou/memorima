@@ -48,8 +48,14 @@ elseif(toggle == 'true')
 answer.style.background = '#f00';
 */
 
-console.log(check(true));
 
+var toggle = 'テスト';
 
+const togglef = function(toggle){
+　　return toggle = 'テスト３３３';
+  //console.log('テスト');
+}
 
-
+const test = function(){
+console.log(togglef(toggle));
+}
