@@ -48,14 +48,49 @@ elseif(toggle == 'true')
 answer.style.background = '#f00';
 */
 
-
-var toggle = 'テスト';
-
-const togglef = function(toggle){
-　　return toggle = 'テスト３３３';
-  //console.log('テスト');
+/*ボタンを押して表示変わる処理のロジック
+let flag = 2;
+if (flag % 2 == 0){
+  console.log('カード裏');
+} else {
+  console.log('カード表')
 }
+*/
 
+let count = 1;
+function toggle(flag){
+    var flag = count++
+    //console.log(flag)
+        if (flag % 2 == 0){
+      answer.style.background = '#ffa';
+          console.log('カード表');
+        } else {
+          console.log('カード裏');
+      answer.style.background = '#f00';
+        }
+    return 
+  }
+      //console.log(count)
+
+
+  
+
+let button = document.getElementById('btn');
+
+/*
+button.addEventListener('click', function(event){
+    count++;
+    console.log(count);
+    if (count == count / 2 == 0){
+      answer.style.background = '#f00';
+    } else ount / 2 == 1
+      answer.style.background = '#ffa';
+    }
+});
+*/
+  
 const test = function(){
-console.log(togglef(toggle));
+console.log(button);
 }
+
+
